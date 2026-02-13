@@ -25,20 +25,20 @@ const Services = () => {
         'Cinematic effects and visual storytelling'
       ]
     },
-    {
-      icon: <FaBullhorn className="text-5xl" />,
-      title: 'Digital Marketing',
-      shortDesc: '',
-      description: 'Complete online marketing solutions to increase reach, leads, and sales',
-      gradient: 'from-accent-blue via-blue-600 to-indigo-700',
-      iconBg: 'from-accent-blue to-blue-700',
-      features: [
-        'Google Ads & Facebook Ads campaigns',
-        'Email marketing automation',
-        'Analytics and performance tracking',
-        'Conversion rate optimization'
-      ]
-    },
+    // {
+    //   icon: <FaBullhorn className="text-5xl" />,
+    //   title: 'Digital Marketing',
+    //   shortDesc: '',
+    //   description: 'Complete online marketing solutions to increase reach, leads, and sales',
+    //   gradient: 'from-accent-blue via-blue-600 to-indigo-700',
+    //   iconBg: 'from-accent-blue to-blue-700',
+    //   features: [
+    //     'Google Ads & Facebook Ads campaigns',
+    //     'Email marketing automation',
+    //     'Analytics and performance tracking',
+    //     'Conversion rate optimization'
+    //   ]
+    // },
     {
       icon: <FaInstagram className="text-5xl" />,
       title: 'Social Media Marketing',
