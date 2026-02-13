@@ -29,11 +29,10 @@ const Services = () => {
       icon: <FaBullhorn className="text-5xl" />,
       title: 'Digital Marketing',
       shortDesc: 'Data-driven marketing strategies',
-      description: 'Complete online marketing solutions to increase reach, leads, and sales with data-driven strategies.',
+      description: 'Complete online marketing solutions to increase reach, leads, and sales',
       gradient: 'from-accent-blue via-blue-600 to-indigo-700',
       iconBg: 'from-accent-blue to-blue-700',
       features: [
-        'SEO optimization for higher rankings',
         'Google Ads & Facebook Ads campaigns',
         'Email marketing automation',
         'Analytics and performance tracking',

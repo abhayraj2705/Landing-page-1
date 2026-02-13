@@ -64,7 +64,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.1 }}
                 className="inline-block text-gold"
               >
-                {" "}Studios
+                {" "}Studio
               </motion.span>
             </div>
           </motion.a>

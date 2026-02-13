@@ -38,12 +38,7 @@ const WhyChooseUs = () => {
     },
   ];
 
-  const stats = [
-    { number: '500+', label: 'Projects Completed' },
-    { number: '200+', label: 'Happy Clients' },
-    { number: '5+', label: 'Years Experience' },
-    { number: '24/7', label: 'Support Available' },
-  ];
+
 
   return (
     <section id="why-us" className="py-20 bg-gradient-to-br from-light-gold via-white to-light-gold relative overflow-hidden">
@@ -148,42 +143,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8"
-        >
-          {stats.map((stat, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05, rotate: [0, -2, 2, 0] }}
-              className="text-center p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-2 border-gold/20"
-            >
-              <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: index * 0.1 + 0.3,
-                  type: "spring",
-                  bounce: 0.5
-                }}
-                className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold to-dark-gold mb-2 font-display"
-              >
-                {stat.number}
-              </motion.div>
-              <div className="text-gray-text font-medium font-display">{stat.label}</div>
-            </motion.div>
-          ))}
-        </motion.div>
+
       </div>
     </section>
   );

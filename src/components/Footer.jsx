@@ -70,7 +70,7 @@ const Footer = () => {
               <h3 className="text-2xl font-serif font-bold font-display">
                 <span className="text-accent-blue">Shree</span>
                 <span className="text-accent-red">Shine</span>
-                <span className="text-gold"> Studios</span>
+                <span className="text-gold"> Studio</span>
               </h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
@@ -180,6 +180,13 @@ const Footer = () => {
               >
                 <FaPhone className="text-gold mt-1 flex-shrink-0 " />
                 <span>+91 9209337566</span>
+              </motion.li>
+              <motion.li
+                whileHover={{ x: 5 }}
+                className="flex items-start gap-3 text-gray-300"
+              >
+                <FaPhone className="text-gold mt-1 flex-shrink-0 " />
+                <span>+91 7249092721</span>
               </motion.li>
               <motion.li
                 whileHover={{ x: 5 }}

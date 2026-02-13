@@ -96,7 +96,7 @@ const Hero = () => {
             transition={{ delay: 0.9 }}
             className="text-gold"
           >
-            {" "}Studios
+            {" "}Studio
           </motion.span>
         </motion.h1>
 
