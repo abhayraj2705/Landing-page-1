@@ -193,7 +193,7 @@ const Footer = () => {
                 className="flex items-start gap-3 text-gray-300"
               >
                 <FaMapMarkerAlt className="text-gold mt-1 flex-shrink-0" />
-                <span>Pune, Maharashtra, India</span>
+                <span>Kirdat Heights, Satara</span>
               </motion.li>
             </ul>
           </motion.div>

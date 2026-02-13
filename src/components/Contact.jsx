@@ -22,8 +22,7 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt className="text-3xl" />,
       title: 'Visit Us',
-      details: 'Available Online',
-      subtitle: 'Serving Globally',
+      details: 'Kirdat Heights, Satara',
       gradient: 'from-accent-red to-rose-700'
     }
   ];
