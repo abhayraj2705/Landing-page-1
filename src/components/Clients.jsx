@@ -67,11 +67,11 @@ const Clients = () => {
   ];
 
   return (
-    <section id="clients" className="py-24 bg-gradient-to-b from-white via-accent-blue/5 to-white relative overflow-hidden">
+    <section id="clients" className="py-24 bg-gradient-to-b from-white via-light-gold/20 to-white relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <motion.div
-          className="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-br from-accent-blue/20 to-gold/10 rounded-full blur-3xl"
+          className="absolute top-20 -left-20 w-96 h-96 bg-gradient-to-br from-gold/20 to-accent-red/10 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.3, 1],
             x: [0, -50, 0],
@@ -84,7 +84,7 @@ const Clients = () => {
           }}
         />
         <motion.div
-          className="absolute -bottom-20 right-0 w-96 h-96 bg-gradient-to-br from-accent-red/10 to-accent-blue/20 rounded-full blur-3xl"
+          className="absolute -bottom-20 -right-20 w-96 h-96 bg-gradient-to-br from-accent-blue/10 to-gold/10 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             x: [0, 30, 0],
@@ -114,7 +114,7 @@ const Clients = () => {
             transition={{ duration: 0.5, type: "spring", bounce: 0.4 }}
             className="inline-block mb-4"
           >
-            <span className="px-4 py-2 bg-accent-blue/10 text-accent-blue rounded-full text-sm font-semibold font-display border border-accent-blue/20">
+            <span className="px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-semibold font-display border border-gold/20">
               Trusted Partners
             </span>
           </motion.div>
@@ -126,7 +126,7 @@ const Clients = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-5xl md:text-7xl font-serif font-bold text-dark-text mb-6"
           >
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-blue via-gold to-accent-red">Clients</span>
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-accent-red to-accent-blue">Clients</span>
           </motion.h2>
 
           <motion.p
@@ -142,7 +142,7 @@ const Clients = () => {
       </div>
 
       {/* Auto-Scrolling Carousel - Opposite Direction */}
-      <div className="w-full relative overflow-hidden bg-gradient-to-b from-accent-blue/5 via-gold/5 to-white py-12">
+      <div className="w-full relative overflow-hidden bg-gradient-to-b from-light-gold/30 via-gold/5 to-white py-12">
         <motion.div
           className="flex gap-8 pl-8"
           animate={{
@@ -198,7 +198,7 @@ const Clients = () => {
 
                     {/* Decorative Corner Elements */}
                     <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-gold/30 rounded-tl-2xl" />
-                    <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-accent-blue/30 rounded-br-2xl" />
+                    <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-gold/30 rounded-br-2xl" />
                   </div>
 
                   {/* Content Section with Shine Effect */}
