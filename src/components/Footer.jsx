@@ -4,19 +4,18 @@ import {
   FaEnvelope, 
   FaPhone, 
   FaMapMarkerAlt,
-  FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaTwitter,
+  FaBriefcase,
   FaHeart
 } from 'react-icons/fa';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: <FaFacebook />, href: "#", label: "Facebook" },
-    { icon: <FaInstagram />, href: "#", label: "Instagram" },
-    { icon: <FaLinkedin />, href: "#", label: "LinkedIn" },
-    { icon: <FaTwitter />, href: "#", label: "Twitter" },
+    { icon: <FaBriefcase />, href: "https://shrikantkirdat.carrd.co", label: "Portfolio", target: "_blank" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/shree_shine_studios?igsh=cDBweDJrNzJscGQ5", label: "Instagram", target: "_blank" },
+    { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/shreeshinestudios?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn - ShreeShine", target: "_blank" },
+    { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/harshad-nikam-3702341a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", label: "LinkedIn - Harshad", target: "_blank" },
   ];
 
   return (
@@ -82,6 +81,8 @@ const Footer = () => {
                 <motion.a
                   key={index}
                   href={social.href}
+                  target={social.target}
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, rotate: 360 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ duration: 0.3 }}
