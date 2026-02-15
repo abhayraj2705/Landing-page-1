@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HoverBorderGradient } from './ui/aceternity-components';
 
 const Clients = () => {
   const clients = [
@@ -146,13 +145,13 @@ const Clients = () => {
         <motion.div
           className="flex gap-8 pl-8"
           animate={{
-            x: [-1920, 0],
+            x: [-3520, 0],
           }}
           transition={{
             x: {
               repeat: Infinity,
               repeatType: "loop",
-              duration: 30,
+              duration: 40,
               ease: "linear",
             },
           }}
@@ -165,11 +164,7 @@ const Clients = () => {
               transition={{ duration: 0.4 }}
               className="flex-shrink-0 w-80 group cursor-pointer"
             >
-              <HoverBorderGradient
-                containerClassName="rounded-3xl"
-                className="bg-white rounded-3xl p-1"
-              >
-                <div className="relative h-96 rounded-2xl bg-gradient-to-br from-white to-gray-50 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="relative h-96 rounded-2xl bg-gradient-to-br from-white to-gray-50 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-200">
                   {/* Image Container with Gradient Overlay */}
                   <div className="relative h-2/3 overflow-hidden">
                     <motion.div
@@ -217,7 +212,7 @@ const Clients = () => {
                     />
 
                     <div className="relative z-10 flex flex-col justify-center h-full">
-                      <h3 className="text-2xl font-serif font-bold text-dark-text mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-gold group-hover:to-accent-blue transition-all duration-300">
+                      <h3 className="text-2xl font-serif font-bold text-dark-text mb-2">
                         {client.name}
                       </h3>
                       
@@ -253,14 +248,9 @@ const Clients = () => {
                     className={`absolute inset-0 bg-gradient-to-br ${client.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none`}
                   />
                 </div>
-              </HoverBorderGradient>
             </motion.div>
           ))}
         </motion.div>
-
-        {/* Gradient Fade Edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent pointer-events-none z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent pointer-events-none z-10" />
       </div>
     </section>
   );
