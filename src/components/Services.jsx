@@ -25,20 +25,20 @@ const Services = () => {
         'Cinematic effects and visual storytelling'
       ]
     },
-    // {
-    //   icon: <FaBullhorn className="text-5xl" />,
-    //   title: 'Digital Marketing',
-    //   shortDesc: '',
-    //   description: 'Complete online marketing solutions to increase reach, leads, and sales',
-    //   gradient: 'from-accent-blue via-blue-600 to-indigo-700',
-    //   iconBg: 'from-accent-blue to-blue-700',
-    //   features: [
-    //     'Google Ads & Facebook Ads campaigns',
-    //     'Email marketing automation',
-    //     'Analytics and performance tracking',
-    //     'Conversion rate optimization'
-    //   ]
-    // },
+    {
+      icon: <FaBullhorn className="text-5xl" />,
+      title: 'Digital Marketing',
+      shortDesc: '',
+      description: 'Complete online marketing solutions to increase reach, leads, and sales',
+      gradient: 'from-accent-blue via-blue-600 to-indigo-700',
+      iconBg: 'from-accent-blue to-blue-700',
+      features: [
+        'Google Ads & Facebook Ads campaigns',
+        'Email marketing automation',
+        'Analytics and performance tracking',
+        'Conversion rate optimization'
+      ]
+    },
     {
       icon: <FaInstagram className="text-5xl" />,
       title: 'Social Media Marketing',
@@ -255,7 +255,7 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           className="space-y-6 mb-16"
         >
-          {services.map((service, index) => (
+          {services.filter(service => service.title !== 'Digital Marketing').map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
